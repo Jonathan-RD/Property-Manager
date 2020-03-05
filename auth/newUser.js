@@ -49,7 +49,7 @@ const createUser = async (event) => {
 
 
     const params = {
-        TableName: "Volunteers",
+        TableName: "CrewMembers",
         Item: {
             firstName: firstName,
             email: email,
