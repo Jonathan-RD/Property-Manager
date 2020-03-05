@@ -45,8 +45,10 @@ provider:
 #            - "/*"
 
 # you can define service wide environment variables here
-#  environment:
-#    variable1: value1
+  environment:
+    accountsSid: "AC5a83d6094c7344e14eaee89d4c056b11"
+    authToken: "e268e82b0477bde9c3a43eca0a6353f7"
+
 
 # you can add packaging information here
 #package:
@@ -59,7 +61,12 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: /manager/dispatcher.handler
+    events:
+      - schedule
+         rate: cron(00 11 * * *)
+         enabled:  true
+
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
