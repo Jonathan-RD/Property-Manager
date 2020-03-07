@@ -26,8 +26,8 @@ provider:
 
 # you can define service wide environment variables here
   environment:
-    accountsSid: "AC5a83d6094c7344e14eaee89d4c056b11" # expired id code
-    authToken: "e268e82b0477bde9c3a43eca0a6353f7".    # expired auth token
+    accountsSid: "dummyId"
+    authToken: "dummyToken"    
 
 functions:
   hello:
