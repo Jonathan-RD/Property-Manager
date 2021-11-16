@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "airbnbapijs": "^0.10.5",
-    "aws-sdk": "^2.494.0",
+    "aws-sdk": "^2.814.0",
     "jsonwebtoken": "^8.5.1",
     "standard": "^14.3.1"
   }
